@@ -7,7 +7,7 @@
 ;; Comment/uncomment this line to enable MELPA Stable if desired.  See `package-archive-priorities`
 ;; and `package-pinned-packages`. Most users will not need or want to do nnthis.
 (add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
-
+(set-face-attribute 'default nil :background "#FFFDE7")
 (setq inhibit-startup-screen t)
 (when (display-graphic-p)
   (push '(background-color . "#FFFFEE") default-frame-alist))
@@ -102,7 +102,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes '(modus-operandi-tinted))
+ '(custom-enabled-themes nil)
  '(custom-safe-themes
    '("87fa3605a6501f9b90d337ed4d832213155e3a2e36a512984f83e847102a42f4"
      "e1df746a4fa8ab920aafb96c39cd0ab0f1bac558eff34532f453bd32c687b9d6"
@@ -116,12 +116,13 @@
      "166a2faa9dc5b5b3359f7a31a09127ebf7a7926562710367086fcc8fc72145da"
      default))
  '(package-selected-packages
-   '(cape corfu doom-modeline kind-icon lsp-mode multiple-cursors
-          nerd-icons-dired orderless org-journal org-modern org-roam
-          rust-mode vertico)))
+   '(cape corfu dape doom-modeline kind-icon lsp-mode magit
+          multiple-cursors nerd-icons-dired orderless org-journal
+          org-modern org-roam rust-mode vertico)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(flymake-errline ((((class color)) (:underline "red"))) t)
+ '(flymake-warnline ((((class color)) (:underline "yellow"))) t))

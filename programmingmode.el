@@ -1,5 +1,8 @@
 ;; -*- lexical-binding: t; -*-
 
+(set-face-attribute 'line-number-current-line nil
+                    :foreground "black"
+                    :weight 'bold)
 (add-hook 'prog-mode-hook #'display-line-numbers-mode)
 ;; (use-package company-box
 ;;   :ensure t
@@ -12,7 +15,10 @@
       corfu-auto-delay 0
       corfu-auto-prefix 1)
 (add-hook 'prog-mode-hook #'corfu-mode)
-
+(add-hook 'html-mode-hook
+          (lambda ()
+            ;; Default indentation is usually 2 spaces, changing to 4.
+            (set (make-local-variable 'sgml-basic-offset) 4)))
 (setq completion-cycle-threshold 3)
 ;; (setq eldoc-idle-delay most-positive-fixnum)
 (dolist (command '(yank yank-pop))
@@ -24,10 +30,19 @@
                                                      ))
                 (let ((mark-even-if-inactive transient-mark-mode))
                   (indent-region (region-beginning) (region-end) nil))))))
+(global-set-key (kbd "C-,") 'compile)
 (setq compile-command "cargo run")
 ;; Disable company automatically in text buffers
 (add-hook 'text-mode-hook (lambda () (corfu-mode -1)))
 (add-hook 'eshell-mode-hook (lambda () (corfu-mode -1)))
+
+;; (require 'eshell)
+;; (require 'ansi-color)
+;; (defun eshell-handle-ansi-color () ;; Enable color for eshell
+;;   (ansi-color-apply-on-region eshell-last-output-start
+;;                               eshell-last-output-end))
+;; (add-to-list 'eshell-output-filter-functions 'eshell-handle-ansi-color)
+
 (add-hook 'prog-mode-hook
           (lambda ()
 	    (interactive)

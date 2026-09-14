@@ -20,6 +20,7 @@
             ;; Default indentation is usually 2 spaces, changing to 4.
             (set (make-local-variable 'sgml-basic-offset) 4)))
 (setq completion-cycle-threshold 3)
+(global-eldoc-mode -1)
 ;; (setq eldoc-idle-delay most-positive-fixnum)
 (dolist (command '(yank yank-pop))
   (eval `(defadvice ,command (after indent-region activate)

@@ -1,0 +1,8 @@
+.cache/
+eln-cache/
+auto-save-list/
+elpa/
+*.elc
+*.eln
+.dap-breakpoints
+.lsp-session-*

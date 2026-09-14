@@ -1,0 +1,128 @@
+:q
+!q
+:q
+exit
+gofmt 
+bleachbit -s Games/
+bleachbit -s .ollama/
+cd ~/Documents/
+ls
+exit
+ls
+exot
+exit
+pip3 install pylint
+python -m venv .venvsource .venv/bin/activate
+pylint
+pipw
+pipx
+pipx ensurepath
+source ~/.config/fish/config.fish 
+exit
+cargo run
+ls
+cargo run
+cargo update
+rustup update
+cls
+sudo pacman -Syu
+cls
+:q
+exit
+:q
+exit
+:q
+exit
+:q
+cargo run
+:q
+cargo run
+!q
+:q
+cargo add ferris-says
+exit
+rustup update
+rustup update
+ls
+sudo pacman -Syu
+cls
+sudo rustup update
+rustup update
+cls
+:q
+cargo build
+cargo run
+bleachbit -s S.T.A.L.K.E.R/
+git
+git --help
+git help tutorial
+cd ~/.emacs.d/
+git status
+git rm test
+git status
+ls
+ls
+exit
+ls
+gcc main.c -o main
+ls
+./main 
+./main 
+./main 
+gcc main.c -o main
+./main 
+gcc main.c -o main
+./main 
+gcc main.c -o main
+./main 
+./main 
+./main
+./main
+gcc main.c -o main
+./main 
+gcc main.c -o main
+./main 
+gcc main.c -o main
+./main 
+gcc main.c -o main
+./main 
+./main 
+gcc main.c -o main
+./main 
+gcc main.c -o main
+./main 
+gcc main.c -o main
+gcc main.c -o main
+gcc main.c -o main
+gcc main.c -o main
+gcc main.c -o main
+./main 
+./main 
+gcc main.c -o main
+./main 
+gcc main.c -o main
+gcc main.c -o main
+./main 
+gcc main.c -o main
+gcc main.c -o main
+gcc main.c -o main
+./main 
+./main 
+./main 
+./main 
+./main 
+gcc main.c -o main
+./main 
+./main 
+ls
+./main 
+./main 
+./main 
+./main 
+./main 
+./main 
+ ./main
+ ./main
+ ./main
+ ./main
+ ./main

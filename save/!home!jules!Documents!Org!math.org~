@@ -1,0 +1,23 @@
+#+TITLE: Fondamental mathématique revision
+
+*  Fonctions
+Une fonction est comme en informatique, nous devons inserer un parametre et la valeur va varier selon cette fonction
+** Exemple
+La fonction carré par exemple est definie par f(y) = y x y = y au carré
+** Fonction inverse
+Une fonction inverse est simplement une fonction avec une valeur negative
+** Tableau de fonction
+Nous pouvons par exemple utiliser un tableau de fonction, qui permet d'avoir des valeurs relative a l'entrée
+Il existe des codes differend par exemple si nous créeons cette fonction :
+f(x) = 1/x
+Puisque nous ne pouvons diviser par zero, nous devons mettre une double barre dans le tableau de fonction.
+
+* Geometrie
+** Vecteur
+Un vecteur est un outil geometrique permettant de deplacer une forme geometrique a l'autre.
+
+** Question geometrie
+FE = BC
+OF = BA
+OE = OB
+

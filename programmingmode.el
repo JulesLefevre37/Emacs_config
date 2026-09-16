@@ -31,18 +31,15 @@
                                                      ))
                 (let ((mark-even-if-inactive transient-mark-mode))
                   (indent-region (region-beginning) (region-end) nil))))))
-(global-set-key (kbd "C-,") 'compile)
+(global-set-key (kbd "C-,") '
+                (lambda ()
+                  (compile)
+                  (set-buffer "*compilation*")
+                  ))
 (setq compile-command "cargo run")
 ;; Disable company automatically in text buffers
 (add-hook 'text-mode-hook (lambda () (corfu-mode -1)))
 (add-hook 'eshell-mode-hook (lambda () (corfu-mode -1)))
-
-;; (require 'eshell)
-;; (require 'ansi-color)
-;; (defun eshell-handle-ansi-color () ;; Enable color for eshell
-;;   (ansi-color-apply-on-region eshell-last-output-start
-;;                               eshell-last-output-end))
-;; (add-to-list 'eshell-output-filter-functions 'eshell-handle-ansi-color)
 
 (add-hook 'prog-mode-hook
           (lambda ()

@@ -1,6 +1,6 @@
 ;; -*- lexical-binding: t; -*-
 (require 'package)
-
+(require 'ef-themes)
 (require 'bookmark)
 (require 'corfu)
 (require 'org-journal)

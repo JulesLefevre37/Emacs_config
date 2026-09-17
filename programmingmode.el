@@ -1,5 +1,4 @@
 ;; -*- lexical-binding: t; -*-
-
 (set-face-attribute 'line-number-current-line nil
                     :foreground "black"
                     :weight 'bold)
@@ -19,6 +18,7 @@
           (lambda ()
             ;; Default indentation is usually 2 spaces, changing to 4.
             (set (make-local-variable 'sgml-basic-offset) 4)))
+
 (setq completion-cycle-threshold 3)
 (global-eldoc-mode -1)
 ;; (setq eldoc-idle-delay most-positive-fixnum)
@@ -31,7 +31,7 @@
                                                      ))
                 (let ((mark-even-if-inactive transient-mark-mode))
                   (indent-region (region-beginning) (region-end) nil))))))
-(global-set-key (kbd "C-,") '
+(global-set-key (kbd "C-,") 
                 (lambda ()
                   (compile)
                   (set-buffer "*compilation*")
